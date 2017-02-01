@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+
+<body>
+    <div class="Estilo">
+        <header>Calculadora de Areas</header>
+        <p>Cuadrado</p>
+        <input type="text" id="Cuadrado1" />
+        <input type="text" id="Cuadrado2" />
+        <input id="Button1" type="button" value="Cuadrado" onclick="document.getElementById('resultado').innerHTML= 'El area del cuadrado es: ' + multiplicarLL(document.getElementById('Cuadrado1').value,document.getElementById('Cuadrado2').value)" />
+
+        <p>Rectangulo</p>
+        <input type="text" id="rectangulo1" />
+        <input type="text" id="rectangulo2" />
+        <input id="Button1" type="button" value="Rectangulo" onclick="document.getElementById('resultado').innerHTML= 'El area del rectangulo es: ' + multiplicarLL(document.getElementById('rectangulo1').value,document.getElementById('rectangulo2').value)" />
+
+
+        <p>Triangulo</p>
+        <input type="text" id="triangulo1" />
+        <input type="text" id="triangulo2" />
+        <input id="Button1" type="button" value="Triangulo" onclick="document.getElementById('resultado').innerHTML = 'El area del Triangulo es: ' + triangulo(document.getElementById('triangulo1').value, document.getElementById('triangulo2').value)" />
+
+        <p>Rombo</p>
+        <input type="text" id="rombo1" />
+        <input type="text" id="rombo2" />
+        <input id="Button1" type="button" value="Rombo" onclick="document.getElementById('resultado').innerHTML = 'El area del Rombo es: ' + triangulo(document.getElementById('rombo1').value, document.getElementById('rombo2').value)" />
+
+        <p>Paralelogramo</p>
+        <input type="text" id="Paralelogramo1" />
+        <input type="text" id="Paralelogramo2" />
+        <input id="Button1" type="button" value="Rectangulo" onclick="document.getElementById('resultado').innerHTML = 'El area del Paralelogramo es: ' + multiplicarLL(document.getElementById('Paralelogramo1').value, document.getElementById('Paralelogramo2').value)" />
+
+
+        <p id="resultado"></p>
+
+    </div>
+    
+</body>
+</html>
